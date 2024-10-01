@@ -1,11 +1,14 @@
   .sidebar{
     display: grid;
     grid-template-rows: 50px; 
-    grid-row-gap: 10px;
+    grid-row-gap: 20px;
     font-size:x-large;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #6256CA;
     position: fixed;
     overflow: auto;
+    margin: 8px;
+    padding: 48px;
+    color: white;
   }
 
