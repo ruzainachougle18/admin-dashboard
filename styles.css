@@ -1,11 +1,10 @@
 /* Default sidebar styling (for larger screens) */
-.sidebar {
+.sidebar-section {
   display: grid;
   grid-template-rows: 50px; 
   grid-row-gap: 30px;
   font-size: x-large;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
-              'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: #6256CA;
   position: fixed;
   overflow: auto;
@@ -17,7 +16,7 @@
   width: 250px; /* Set a fixed width for larger screens */
 }
 
-.sidebar-top div img.icon, .sidebar-btm div img.icon, .sidebar img.icon {
+.sidebar-top div img.icon, .sidebar-btm div img.icon, .sidebar-section img.icon {
   width: 30px;
   height: 30px;
   margin-right: 10px;
@@ -26,51 +25,52 @@
 
 /* Responsive styling for tablets and small laptops */
 @media (max-width: 1024px) {
-  .sidebar {
-      width: 200px; /* Reduce the sidebar width for smaller screens */
-      padding: 40px;
+  .sidebar-section {
+    width: 200px; /* Reduce the sidebar width for smaller screens */
+    padding: 40px;
   }
 
-  .sidebar-top div img.icon, .sidebar-btm div img.icon, .sidebar img.icon {
-      width: 25px; /* Reduce icon size */
-      height: 25px;
+  .sidebar-top div img.icon, .sidebar-btm div img.icon, .sidebar-section img.icon {
+    width: 25px; /* Reduce icon size */
+    height: 25px;
   }
 
-  .sidebar {
-      font-size: large; /* Adjust text size */
+  .sidebar-section {
+    font-size: large; /* Adjust text size */
   }
 }
 
 /* Responsive styling for mobile devices */
 @media (max-width: 768px) {
-  .sidebar {
-      width: 150px; /* Further reduce width for mobile devices */
-      padding: 30px;
+  .sidebar-section {
+    width: 150px; /* reduced width for mobile devices */
+    padding: 30px;
   }
 
-  .sidebar-top div img.icon, .sidebar-btm div img.icon, .sidebar img.icon {
-      width: 20px; /* Smaller icons for mobile */
-      height: 20px;
+  .sidebar-top div img.icon, .sidebar-btm div img.icon, .sidebar-section img.icon {
+    width: 20px; /* Smaller icons for mobile */
+    height: 20px;
   }
 
-  .sidebar {
-      font-size: medium; /* Adjust font size for mobile */
+  .sidebar-section {
+    font-size: medium; /* Adjust font size for mobile */
   }
 }
 
-/* Styling for very small mobile devices (portrait mode) */
+/* Styling for very small mobile devices */
 @media (max-width: 480px) {
-  .sidebar {
-      width: 100px; /* Make the sidebar narrower */
-      padding: 20px;
+  .sidebar-section {
+    width: 100px; /* Make the sidebar narrower */
+    padding: 20px;
   }
 
-  .sidebar-top div img.icon, .sidebar-btm div img.icon, .sidebar img.icon {
-      width: 15px; /* Smallest icon size */
-      height: 15px;
+  .sidebar-top div img.icon, .sidebar-btm div img.icon, .sidebar-section img.icon {
+    width: 15px; /* Smallest icon size */
+    height: 15px;
   }
+  
 
-  .sidebar {
-      font-size: small; /* Small font size for very small screens */
+  .sidebar-section {
+    font-size: small; /* Small font size for very small screens */
   }
 }
