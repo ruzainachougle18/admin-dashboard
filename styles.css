@@ -12,3 +12,24 @@
     height: 82%;
     color: white;
   }
+
+  .sidebar-top div img.icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+
+  }
+
+  .sidebar-btm div img.icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+
+  }
+
+  .sidebar img.icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+
+  }
