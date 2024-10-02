@@ -16,6 +16,11 @@
   width: 250px; /* Set a fixed width for larger screens */
 }
 
+.dashboard{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size:x-large;
+}
+
 .sidebar-item img.icon {
   width: 30px;
   height: 30px;
@@ -72,4 +77,14 @@
   .sidebar-section {
     font-size: small; /* Small font size for very small screens */
   }
+}
+
+.sidebar-top{
+  font-size: 18px;
+  word-spacing: 5px;
+}
+
+.sidebar-btm{
+  font-size: 18px;
+  word-spacing: 5px;
 }
