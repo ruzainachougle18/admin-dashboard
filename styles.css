@@ -1,7 +1,7 @@
   .sidebar{
     display: grid;
     grid-template-rows: 50px; 
-    grid-row-gap: 20px;
+    grid-row-gap: 30px;
     font-size:x-large;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #6256CA;
@@ -10,26 +10,27 @@
     margin: 8px;
     padding: 48px;
     height: 82%;
-    color: white;
-  }
+    font-weight: 700;
+    line-height: 1.6;
+    }
 
   .sidebar-top div img.icon{
     width: 30px;
     height: 30px;
     margin-right: 10px;
-
+    vertical-align: middle;
   }
 
   .sidebar-btm div img.icon{
     width: 30px;
     height: 30px;
     margin-right: 10px;
-
+    vertical-align: middle;
   }
 
   .sidebar img.icon{
     width: 30px;
     height: 30px;
     margin-right: 10px;
-
+    vertical-align: middle;
   }
