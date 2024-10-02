@@ -1,4 +1,4 @@
-/* Default sidebar styling (for larger screens) */
+/* Default sidebar styling for larger screens */
 .sidebar-section {
   display: grid;
   grid-template-rows: 70px; 
@@ -14,17 +14,17 @@
   height: 82%;
   font-weight: 700;
   line-height: 1.6;
-  width: 250px; /* Fixed width for larger screens */
+  width: 250px; 
 }
 
 /* Increase font size and icon size for the Dashboard section */
 .dashboard {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: xx-large; /* Larger font size */
+  font-size: xx-large; 
 }
 
 .dashboard img.icon {
-  width: 40px; /* Increase icon size */
+  width: 40px; 
   height: 40px;
 }
 
@@ -38,82 +38,94 @@
 /* Responsive styling for tablets and small laptops */
 @media (max-width: 1024px) {
   .sidebar-section {
-    width: 200px; /* Reduce the sidebar width for smaller screens */
+    width: 200px; 
     padding: 40px;
   }
 
   .sidebar-item img.icon {
-    width: 25px; /* Reduce icon size */
+    width: 25px; 
     height: 25px;
   }
 
   .dashboard img.icon {
-    width: 35px; /* Adjust dashboard icon for smaller screens */
+    width: 35px; 
     height: 35px;
   }
 
   .sidebar-section {
-    font-size: large; /* Adjust text size */
+    font-size: large; 
   }
 
   .dashboard {
-    font-size: x-large; /* Adjust dashboard text size */
+    font-size: x-large; 
   }
 }
 
 /* Responsive styling for mobile devices */
 @media (max-width: 768px) {
   .sidebar-section {
-    width: 150px; /* Reduced width for mobile devices */
+    width: 150px; 
     padding: 30px;
   }
 
   .sidebar-item img.icon {
-    width: 20px; /* Smaller icons for mobile */
+    width: 20px; 
     height: 20px;
   }
 
   .dashboard img.icon {
-    width: 30px; /* Adjust dashboard icon for mobile */
+    width: 30px; 
     height: 30px;
   }
 
   .sidebar-section {
-    font-size: medium; /* Adjust font size for mobile */
+    font-size: medium; 
   }
 
   .dashboard {
-    font-size: large; /* Adjust dashboard text size for mobile */
+    font-size: large; 
   }
 }
 
 /* Styling for very small mobile devices */
 @media (max-width: 480px) {
   .sidebar-section {
-    width: 100px; /* Make the sidebar narrower */
+    width: 100px; 
     padding: 20px;
   }
 
   .sidebar-item img.icon {
-    width: 15px; /* Smallest icon size */
+    width: 15px; 
     height: 15px;
   }
 
   .dashboard img.icon {
-    width: 25px; /* Adjust dashboard icon for very small devices */
+    width: 25px; 
     height: 25px;
   }
 
   .sidebar-section {
-    font-size: small; /* Small font size for very small screens */
+    font-size: small; 
   }
 
   .dashboard {
-    font-size: medium; /* Adjust dashboard text size for small screens */
+    font-size: medium; 
   }
 }
 
 .sidebar-top, .sidebar-btm {
   font-size: 18px;
   word-spacing: 5px;
+}
+
+.search-bar {
+  width: 50%; /* Set width to 50% of the container */
+  max-width: 400px;
+  margin-left: 40%;
+  margin-top: 8px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius:8px;
+  background-color: rgb(193, 193, 193);
 }
