@@ -1,11 +1,12 @@
 /* Default sidebar styling (for larger screens) */
 .sidebar-section {
   display: grid;
-  grid-template-rows: 50px; 
+  grid-template-rows: 70px; 
   grid-row-gap: 30px;
   font-size: x-large;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: #6256CA;
+  color: white;
   position: fixed;
   overflow: auto;
   margin: 8px;
@@ -13,12 +14,18 @@
   height: 82%;
   font-weight: 700;
   line-height: 1.6;
-  width: 250px; /* Set a fixed width for larger screens */
+  width: 250px; /* Fixed width for larger screens */
 }
 
-.dashboard{
-  font-family:Georgia, 'Times New Roman', Times, serif;
-  font-size:x-large;
+/* Increase font size and icon size for the Dashboard section */
+.dashboard {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: xx-large; /* Larger font size */
+}
+
+.dashboard img.icon {
+  width: 40px; /* Increase icon size */
+  height: 40px;
 }
 
 .sidebar-item img.icon {
@@ -40,15 +47,24 @@
     height: 25px;
   }
 
+  .dashboard img.icon {
+    width: 35px; /* Adjust dashboard icon for smaller screens */
+    height: 35px;
+  }
+
   .sidebar-section {
     font-size: large; /* Adjust text size */
+  }
+
+  .dashboard {
+    font-size: x-large; /* Adjust dashboard text size */
   }
 }
 
 /* Responsive styling for mobile devices */
 @media (max-width: 768px) {
   .sidebar-section {
-    width: 150px; /* reduced width for mobile devices */
+    width: 150px; /* Reduced width for mobile devices */
     padding: 30px;
   }
 
@@ -57,8 +73,17 @@
     height: 20px;
   }
 
+  .dashboard img.icon {
+    width: 30px; /* Adjust dashboard icon for mobile */
+    height: 30px;
+  }
+
   .sidebar-section {
     font-size: medium; /* Adjust font size for mobile */
+  }
+
+  .dashboard {
+    font-size: large; /* Adjust dashboard text size for mobile */
   }
 }
 
@@ -74,17 +99,21 @@
     height: 15px;
   }
 
+  .dashboard img.icon {
+    width: 25px; /* Adjust dashboard icon for very small devices */
+    height: 25px;
+  }
+
   .sidebar-section {
     font-size: small; /* Small font size for very small screens */
   }
+
+  .dashboard {
+    font-size: medium; /* Adjust dashboard text size for small screens */
+  }
 }
 
-.sidebar-top{
-  font-size: 18px;
-  word-spacing: 5px;
-}
-
-.sidebar-btm{
+.sidebar-top, .sidebar-btm {
   font-size: 18px;
   word-spacing: 5px;
 }
