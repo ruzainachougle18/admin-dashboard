@@ -4,7 +4,7 @@
   grid-template-rows: 50px; 
   grid-row-gap: 30px;
   font-size: x-large;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: #6256CA;
   position: fixed;
   overflow: auto;
@@ -16,7 +16,7 @@
   width: 250px; /* Set a fixed width for larger screens */
 }
 
-.sidebar-top div img.icon, .sidebar-btm div img.icon, .sidebar-section img.icon {
+.sidebar-item img.icon {
   width: 30px;
   height: 30px;
   margin-right: 10px;
@@ -30,7 +30,7 @@
     padding: 40px;
   }
 
-  .sidebar-top div img.icon, .sidebar-btm div img.icon, .sidebar-section img.icon {
+  .sidebar-item img.icon {
     width: 25px; /* Reduce icon size */
     height: 25px;
   }
@@ -47,7 +47,7 @@
     padding: 30px;
   }
 
-  .sidebar-top div img.icon, .sidebar-btm div img.icon, .sidebar-section img.icon {
+  .sidebar-item img.icon {
     width: 20px; /* Smaller icons for mobile */
     height: 20px;
   }
@@ -64,11 +64,10 @@
     padding: 20px;
   }
 
-  .sidebar-top div img.icon, .sidebar-btm div img.icon, .sidebar-section img.icon {
+  .sidebar-item img.icon {
     width: 15px; /* Smallest icon size */
     height: 15px;
   }
-  
 
   .sidebar-section {
     font-size: small; /* Small font size for very small screens */
