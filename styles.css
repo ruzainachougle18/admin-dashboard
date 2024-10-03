@@ -118,14 +118,28 @@
   word-spacing: 5px;
 }
 
+.searchBar {
+  display: flex;
+  align-items:center;
+  justify-content:flex-end;
+  padding: 10px 20px;
+  width: 65%; 
+}
+
 .search-bar {
-  width: 50%; /* Set width to 50% of the container */
-  max-width: 400px;
-  margin-left: 40%;
-  margin-top: 8px;
+  flex: 1; 
+  max-width: 500px; 
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
-  border-radius:8px;
+  border-radius: 8px;
   background-color: rgb(193, 193, 193);
 }
+
+.search-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  cursor: pointer; 
+}
+
