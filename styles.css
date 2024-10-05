@@ -1,7 +1,7 @@
 /* Default sidebar styling for larger screens */
 .sidebar-section {
   display: grid;
-  grid-template-rows: 70px; 
+  grid-template-rows: 70px;
   grid-row-gap: 30px;
   font-size: x-large;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -14,17 +14,17 @@
   height: 82%;
   font-weight: 700;
   line-height: 1.6;
-  width: 250px; 
+  width: 250px;
 }
 
 /* Increase font size and icon size for the Dashboard section */
 .dashboard {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: xx-large; 
+  font-size: xx-large;
 }
 
 .dashboard img.icon {
-  width: 40px; 
+  width: 40px;
   height: 40px;
 }
 
@@ -38,97 +38,115 @@
 /* Responsive styling for tablets and small laptops */
 @media (max-width: 1024px) {
   .sidebar-section {
-    width: 200px; 
+    width: 200px;
     padding: 40px;
   }
 
   .sidebar-item img.icon {
-    width: 25px; 
+    width: 25px;
     height: 25px;
   }
 
   .dashboard img.icon {
-    width: 35px; 
+    width: 35px;
     height: 35px;
   }
 
   .sidebar-section {
-    font-size: large; 
+    font-size: large;
   }
 
   .dashboard {
-    font-size: x-large; 
+    font-size: x-large;
+  }
+
+  .header {
+    margin-left: 200px;
+    margin-right: 200px;
+    width: calc(100% - 400px); /* Adjust the width for tablets */
   }
 }
 
 /* Responsive styling for mobile devices */
 @media (max-width: 768px) {
   .sidebar-section {
-    width: 150px; 
+    width: 150px;
     padding: 30px;
   }
 
   .sidebar-item img.icon {
-    width: 20px; 
+    width: 20px;
     height: 20px;
   }
 
   .dashboard img.icon {
-    width: 30px; 
+    width: 30px;
     height: 30px;
   }
 
   .sidebar-section {
-    font-size: medium; 
+    font-size: medium;
   }
 
   .dashboard {
-    font-size: large; 
+    font-size: large;
+  }
+
+  .header {
+    margin-left: 150px;
+    margin-right: 150px;
+    width: calc(100% - 300px); /* Adjust width for mobile devices */
   }
 }
 
 /* Styling for very small mobile devices */
 @media (max-width: 480px) {
   .sidebar-section {
-    width: 100px; 
+    width: 100px;
     padding: 20px;
   }
 
   .sidebar-item img.icon {
-    width: 15px; 
+    width: 15px;
     height: 15px;
   }
 
   .dashboard img.icon {
-    width: 25px; 
+    width: 25px;
     height: 25px;
   }
 
   .sidebar-section {
-    font-size: small; 
+    font-size: small;
   }
 
   .dashboard {
-    font-size: medium; 
+    font-size: medium;
+  }
+
+  .header {
+    margin-left: 100px;
+    margin-right: 100px;
+    width: calc(100% - 200px); /* Adjust width for very small mobile devices */
+  }
+
+  .searchBar {
+    width: 100%; /* Full width for search bar on smaller screens */
   }
 }
 
-.sidebar-top, .sidebar-btm {
-  font-size: 18px;
-  word-spacing: 5px;
-}
-
+/* Search bar styling */
 .searchBar {
   display: flex;
-  align-items:center;
-  justify-content:flex-end;
+  align-items: center;
+  justify-content: flex-end;
   padding: 10px 20px;
-  width: 65%; 
+  width: 65%;
 }
 
 .search-bar {
-  flex: 1; 
-  max-width: 500px; 
+  flex: 1;
+  max-width: 500px;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -140,13 +158,14 @@
   width: 30px;
   height: 30px;
   margin-right: 10px;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
+/* Notification icon styling */
 .notification {
   display: flex;
   align-items: center;
-  justify-content: flex-end; 
+  justify-content: flex-end;
 }
 
 .notification-icon {
@@ -155,13 +174,25 @@
   cursor: pointer;
 }
 
-
+/* Header styling */
 .header {
   display: flex;
-  align-items: center; 
-  justify-content:space-evenly; 
+  align-items: center;
+  justify-content: space-evenly;
   padding: 10px 20px;
   margin-left: 250px;
-  margin-right: 350px; 
-  width: calc(100% - 450px); 
+  margin-right: 350px;
+  width: calc(100% - 450px); /* Default width for larger screens */
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.user-icon {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
 }
