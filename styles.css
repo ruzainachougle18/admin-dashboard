@@ -4,17 +4,19 @@
   grid-template-rows: 70px;
   grid-row-gap: 30px;
   font-size: x-large;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color: #6256CA;
+  font-family: 'Lucida Sans', Geneva, sans-serif;
+  background-color: #6256CA; 
   color: white;
   position: fixed;
-  overflow: auto;
-  margin: 8px;
-  padding: 48px;
-  height: 82%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  padding: 40px 0 0 30px; /* Padding for top and bottom */
+  margin: 0; 
+  height: 100vh; 
   font-weight: 700;
   line-height: 1.6;
-  width: 250px;
 }
 
 /* Increase font size and icon size for the Dashboard section */
@@ -139,9 +141,9 @@
 .searchBar {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   padding: 10px 20px;
   width: 65%;
+  left:0;
 }
 
 .search-bar {
@@ -149,9 +151,11 @@
   max-width: 500px;
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: rgb(193, 193, 193);
+  border: 1px solid #fafafa;
+  border-radius: 40px;
+  background-color: rgb(222, 222, 222);
+  justify-content:space-evenly;
+  max-width: 650px;
 }
 
 .search-icon {
@@ -175,22 +179,27 @@
 }
 
 /* Header styling */
+
 .header {
   display: flex;
   align-items: center;
-  justify-content:space-between;
-  padding: 10px 20px;
-  margin-left: 390px;
-  margin-right: 350px;
-  width: calc(100% - 450px); /* Default width for larger screens */
+  justify-content:space-evenly;
+  padding: 20px;
   background-color: #FAF7F0;
-  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 280px; /* Aligns with sidebar width */
+  width: calc(100% - 250px); /* Dynamic width depending on sidebar */
+  height: 80px;
+  z-index: 1000; /* Ensure it stays on top of other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
 }
 
 .profile {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin-right:10%;
 }
 
 .user-icon {
@@ -198,6 +207,7 @@
   height: 80px;
   cursor: pointer;
   font-size: 20px;
+  border-radius: 200%;
 }
 
 .username{
@@ -207,4 +217,11 @@
   font-size: 20px;
   font-weight: 600;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-container{
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  margin-left: 390px;
 }
