@@ -145,16 +145,23 @@
 
 .notification {
   display: flex;
-  align-items:center;
-  justify-content:flex-end;
-  padding: 10px 20px;
-  width: 75%; 
-  padding-bottom: 70%;
+  align-items: center;
+  justify-content: flex-end; 
 }
 
 .notification-icon {
   width: 30px;
   height: 30px;
-  margin-right: 10px;
   cursor: pointer;
+}
+
+
+.header {
+  display: flex;
+  align-items: center; 
+  justify-content:space-evenly; 
+  padding: 10px 20px;
+  margin-left: 250px;
+  margin-right: 350px; 
+  width: calc(100% - 450px); 
 }
