@@ -239,7 +239,7 @@
 
 .layout{
   width: 90%;
-  position: absolute;
+  position:fixed;
   margin-bottom: 40%;
   padding-bottom: 60%;
 }
