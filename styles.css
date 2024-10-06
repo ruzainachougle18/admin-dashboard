@@ -226,7 +226,7 @@
 }
 
 .main-container {
-  background-color: #f0efef; 
+  /*background-color: #f0efef; */
   margin-left: 300px; 
   padding: 20px 0 0 10px; 
   height: 95vh; 
@@ -235,4 +235,25 @@
   display:flexbox;
   justify-content: space-evenly;
   align-items: flex-start;
+}
+
+.layout{
+  width: 90%;
+  position: absolute;
+  margin-bottom: 40%;
+  padding-bottom: 60%;
+}
+
+.projects{
+  display: grid;
+  grid-template-columns: auto auto ;
+  gap: 30px;
+  padding-left: 2%;
+  padding-right: 35%;
+  margin-bottom: 20%;
+}
+
+.project1, .project2, .project3, .project4, .project5, .project6{
+  background-color: pink;
+  min-height: 200px;
 }
