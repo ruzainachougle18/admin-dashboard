@@ -12,7 +12,6 @@ body {
   align-items: center;
 }
 
-
 /* Default sidebar styling for larger screens */
 .sidebar-section {
   display: grid;
@@ -55,100 +54,66 @@ body {
 /* Responsive styling for tablets and small laptops */
 @media (max-width: 1024px) {
   .sidebar-section {
-    width: 200px;
-    padding: 40px;
-  }
-
-  .sidebar-item img.icon {
-    width: 25px;
-    height: 25px;
-  }
-
-  .dashboard img.icon {
-    width: 35px;
-    height: 35px;
-  }
-
-  .sidebar-section {
-    font-size: large;
-  }
-
-  .dashboard {
-    font-size: x-large;
+    width: 200px; /* Adjust sidebar width for tablets */
   }
 
   .header {
-    margin-left: 200px;
+    margin-left: 200px; /* Adjust header margin for tablets */
     margin-right: 200px;
-    width: calc(100% - 400px); /* Adjust the width for tablets */
+    width: calc(100% - 400px); /* Adjust width for tablets */
+  }
+
+  .main-container {
+    margin-left: 200px; /* Adjust left margin for main container */
+    width: calc(100% - 200px); /* Adjust width for main container */
+  }
+
+  .header-buttons {
+    margin-left: 10px; /* Slightly increase space on tablets */
   }
 }
 
 /* Responsive styling for mobile devices */
 @media (max-width: 768px) {
   .sidebar-section {
-    width: 150px;
-    padding: 30px;
-  }
-
-  .sidebar-item img.icon {
-    width: 20px;
-    height: 20px;
-  }
-
-  .dashboard img.icon {
-    width: 30px;
-    height: 30px;
-  }
-
-  .sidebar-section {
-    font-size: medium;
-  }
-
-  .dashboard {
-    font-size: large;
+    width: 150px; /* Adjust sidebar width for mobile devices */
   }
 
   .header {
-    margin-left: 150px;
+    margin-left: 150px; /* Adjust header margin for mobile */
     margin-right: 150px;
     width: calc(100% - 300px); /* Adjust width for mobile devices */
+  }
+
+  .main-container {
+    margin-left: 150px; /* Adjust left margin for main container */
+    width: calc(100% - 150px); /* Adjust width for main container */
+  }
+
+  .header-buttons {
+    margin-left: 5px; /* Adjust left margin for buttons on mobile */
   }
 }
 
 /* Styling for very small mobile devices */
 @media (max-width: 480px) {
   .sidebar-section {
-    width: 100px;
-    padding: 20px;
-  }
-
-  .sidebar-item img.icon {
-    width: 15px;
-    height: 15px;
-  }
-
-  .dashboard img.icon {
-    width: 25px;
-    height: 25px;
-  }
-
-  .sidebar-section {
-    font-size: small;
-  }
-
-  .dashboard {
-    font-size: medium;
+    width: 100px; /* Adjust sidebar width for very small devices */
   }
 
   .header {
-    margin-left: 100px;
+    margin-left: 100px; /* Adjust header margin for very small devices */
     margin-right: 100px;
-    width: calc(100% - 200px); /* Adjust width for very small mobile devices */
+    width: calc(100% - 200px); /* Adjust width for very small devices */
   }
 
-  .searchBar {
-    width: 100%; 
+  .main-container {
+    margin-left: 100px; /* Adjust left margin for main container */
+    width: calc(100% - 100px); /* Adjust width for main container */
+  }
+
+  .header-buttons {
+    margin-left: 0; /* Remove left margin for buttons on very small devices */
   }
 }
 
@@ -157,7 +122,7 @@ body {
   align-items: center;
   padding: 10px 20px;
   width: 65%;
-  left:0;
+  left: 0;
 }
 
 .search-bar {
@@ -168,7 +133,7 @@ body {
   border: 1px solid #fafafa;
   border-radius: 40px;
   background-color: rgb(222, 222, 222);
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   max-width: 650px;
 }
 
@@ -199,9 +164,9 @@ body {
   background-color: white;
   position: fixed;
   top: 0;
-  left: 310px; 
+  left: 310px;
   width: calc(100% - 250px); 
-  height: 90px;
+  height: 70px;
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   flex-wrap: wrap;
@@ -211,7 +176,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-right:10%;
+  margin-right: 10%;
 }
 
 .user-icon {
@@ -222,23 +187,23 @@ body {
   border-radius: 200%;
 }
 
-.username{
+.username {
   display: flex;
   align-items: center;
-  justify-content:flex-end;
+  justify-content: flex-end;
   font-size: 20px;
   font-weight: 600;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.heading{
+.heading {
   display: flex;
   align-items: center;
   margin-top: 10%;
   margin-left: 2%;
   font-size: 20px;
   font-weight: 500;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .main-container {
@@ -248,43 +213,43 @@ body {
   height: 95vh; 
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); 
   width: 80%;
-  display:flexbox;
+  display: flexbox;
   justify-content: space-evenly;
   align-items: flex-start;
   overflow: auto;
 }
 
-.layout{
+.layout {
   width: 90%;
-  position:fixed;
+  position: fixed;
   margin-bottom: 40%;
   padding-bottom: 60%;
 }
 
-.projects{
+.projects {
   display: grid;
-  grid-template-columns: auto auto ;
+  grid-template-columns: auto auto;
   gap: 30px;
-  padding-left: 2% ;
+  padding-left: 2%;
   padding-right: 35%;
   margin-bottom: 10%;
 }
 
-.project1, .project2, .project3, .project4, .project5, .project6{
-  background-color:white;
+.project1, .project2, .project3, .project4, .project5, .project6 {
+  background-color: white;
   min-height: 50px;
   border-radius: 10px;
   border-left: 10px solid rgb(169, 181, 8);
   box-shadow: 10px 10px 5px rgb(142, 143, 143);
 }
 
-h3{
+h3 {
   font-size: 20px;
   font-weight: 600;
   padding: 8px;  
 }
 
-.description{
+.description {
   font-size: 18px;
   padding: 8px;
   color: rgb(81, 79, 79);
@@ -295,20 +260,22 @@ h3{
   display: flex;
   align-items: center; /* Align vertically */
   justify-content: flex-start; /* Align horizontally to the left */
-  gap: 20px; /* Increased gap between image and text */
-  margin-bottom: 20px; /* Space below the welcome section */
+  gap: 10px; /* Increased gap between image and text */
   padding-left: 10px;
 }
 
 .welcome-user {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   cursor: pointer;
   border-radius: 50%; /* More realistic for a profile picture */
+  margin-bottom: 20px; /* Added bottom margin for space below the image */
 }
 
+
 .welcome h2 {
-  font-size: 22px;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .welcome a {
@@ -329,6 +296,7 @@ h3{
   margin-top: 0; /* Space between welcome section and buttons */
   margin-left: 0; /* Remove left margin to align buttons closer to the welcome section */
   padding-right: 8%; /* Add padding to the right for spacing */
+  margin-bottom: 20px;
 }
 
 .buttons {
@@ -345,4 +313,3 @@ h3{
 .buttons:hover {
   background-color: #05033a; /* Darker shade on hover */
 }
-
