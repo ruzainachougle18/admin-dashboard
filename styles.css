@@ -1,7 +1,9 @@
-body {
+body, html {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  height: 100vh; /* Maintain full viewport height */
+  min-height: 1200px; /* Increase minimum height for more space */
 }
 
 .container {
@@ -379,10 +381,6 @@ h3 {
   background-color: #05033a; /* Darker shade on hover */
 }
 
-.announcement-title,
-.announcement-description {
-    padding: .3em;
-}
 
 .announcements-header {
     grid-column: 3/4;
@@ -411,6 +409,10 @@ h3 {
   grid-template-columns: 1fr;
   padding-right: 5%;
   flex: 1;
+  max-width: 400px;
+  max-height: 95%;
+  overflow:hidden;
+  padding-top: 0;
 }
 
 .announcement-title {
@@ -425,7 +427,7 @@ h3 {
 }
 
 .announcement-divider {
-  margin: .3em 0;
+  margin: .1em 0;
 }
 
 .announcement {
