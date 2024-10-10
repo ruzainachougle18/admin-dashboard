@@ -10,6 +10,10 @@ All images taken from
 * (https://unsplash.com/)
 * (https://iconduck.com/)
 
+## Screenshots
+
+![admin-dashboard](admin-dashboard)
+
 ## Live Demo
 
 You can view the live demo of this project hosted on GitHub Pages: [Admin Dashboard](https://ruzainachougle18.github.io/admin-dashboard/)
