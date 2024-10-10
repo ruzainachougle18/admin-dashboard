@@ -1,9 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body, html {
   margin: 0;
   padding: 0;
   overflow: hidden;
   height: 100vh; /* Maintain full viewport height */
-  min-height: 1200px; /* Increase minimum height for more space */
+  min-height: 100vh; /* Increase minimum height for more space */
 }
 
 .container {
@@ -262,6 +266,7 @@ body, html {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding-left: 5.5%;
   margin-top: 8.5%;
+  margin-bottom: 2%;
 
 }
 
@@ -286,7 +291,8 @@ body, html {
   padding-bottom: 60%;
   justify-content: space-between;
   align-items: center; 
-  margin-top: 5px;
+  margin-top: 2%;
+  flex: 2;
 }
 
 .projects{
@@ -305,6 +311,20 @@ body, html {
   border-radius: 10px;
   border-left: 10px solid rgb(169, 181, 8);
   box-shadow: 10px 10px 5px rgb(142, 143, 143);
+  padding: 5px;
+}
+
+.projects-icon {
+  display: flex;
+  margin-bottom: 18px;
+  margin-right: 25px;
+  gap: 20px;
+  justify-content: end;
+}
+
+.star-icon, .eye-icon, .fork-icon {
+  width: 15px;
+  height: 15px;
 }
 
 h3 {
@@ -403,7 +423,7 @@ h3 {
    grid-template-columns: 1fr;
    grid-template-rows: repeat(auto-fill, minmax(40px, 1fr));
    margin-left: 70%;
-   margin-top: 13%;
+   margin-top: 15%;
 }
 
 .announcements-container {
@@ -431,7 +451,7 @@ h3 {
 }
 
 .announcement-divider {
-  margin: 0.05em 0; /* Reduced margins */
+  margin: .7em 0; /* Reduced margins */
 }
 
 .announcement {
@@ -447,10 +467,10 @@ h3 {
 .trending-container {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 0 1%; /* Reduced padding for a tighter fit */
+  padding: 1%; /* Reduced padding for a tighter fit */
   flex: 1;
-  max-width: 280px;
-  max-height: 200px; /* Fixed height */
+  max-width: 270px;
+  max-height: 250px; /* Fixed height */
   overflow: hidden; /* Prevent scrolling */
   border-radius: 10px;
   margin-top: 0; /* Gap between containers */
@@ -458,7 +478,7 @@ h3 {
 }
 
 .trending-heading {
-  font-size: 14px; /* Font size */
+  font-size: 16px; /* Font size */
   font-weight: 700;
   margin-bottom: 2px; /* Reduced margin */
   color: #343a40;
@@ -472,7 +492,7 @@ h3 {
   align-items: center;
   background-color: white;
   border-radius: 10px;
-  padding: 0.2em; /* Further reduced padding */
+  padding: 0.3em; /* Further reduced padding */
   margin-bottom: 2px; /* Spacing between each description */
   overflow: hidden; /* Ensure content doesn't overflow */
 }
@@ -501,7 +521,7 @@ h3 {
 .kendall a,
 .alex a {
   font-weight: 700;
+  font-size: 13px;
   color: black;
   text-decoration: none;
-  white-space: nowrap; /* Prevent text wrapping */
 }
