@@ -5,14 +5,9 @@ This project is responsive admin dashboard built using only HTML and CSS with a 
 ## Source
 
 All images taken from
-[Material Designs Icons]
 * (https://pictogrammers.com/library/mdi/)
 * (https://unsplash.com/)
 * (https://iconduck.com/)
-
-## Screenshots
-
-![dashboard (2)](admin-dashboard)
 
 ## Live Demo
 
