@@ -1,13 +1,13 @@
 # Admin-Dashboard
 
-This project is responsive admin dashboard built using only HTML and CSS with a strong focus on CSS Grid and Flexbox for layout management.
+This project is a responsive admin dashboard built using only HTML and CSS, with a strong focus on CSS Grid and Flexbox for layout management.
 
 ## Source
 
-All images taken from
-* (https://pictogrammers.com/library/mdi/)
-* (https://unsplash.com/)
-* (https://iconduck.com/)
+All images taken from:
+- [Material Designs Icons](https://pictogrammers.com/library/mdi/)
+- [Unsplash](https://unsplash.com/)
+- [Iconduck](https://iconduck.com/)
 
 ## Live Demo
 
