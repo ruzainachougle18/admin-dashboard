@@ -12,7 +12,7 @@ All images taken from
 
 ## Screenshots
 
-![admin-dashboard](admin-dashboard)
+![dashboard (2)](admin-dashboard)
 
 ## Live Demo
 
