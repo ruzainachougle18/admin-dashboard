@@ -524,3 +524,44 @@ h3 {
   color: black;
   text-decoration: none;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .main-container {
+    margin-left: 200px; /* Reduced left margin */
+    width: calc(100% - 200px); /* Adjusted width */
+  }
+  
+  .header-buttons {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: flex-end; /* Align buttons to the right */
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    margin-left: 0; /* Full width */
+    width: 100%; /* Full width */
+    padding: 20px; /* Adjust padding */
+  }
+
+  .layout {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  .projects {
+    grid-template-columns: 1fr; /* Single column layout */
+    padding-left: 5%; /* Adjust padding */
+    padding-right: 5%; /* Adjust padding */
+  }
+
+  .header-buttons {
+    flex-direction: row; /* Switch back to row on small screens */
+    justify-content: space-between; /* Space between buttons */
+  }
+
+  .welcome-user {
+    height: 80px; /* Adjust size for smaller screens */
+    width: 80px; /* Adjust size for smaller screens */
+  }
+}
